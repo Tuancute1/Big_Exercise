@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="./thuvien/bootstrap.min.css">
+    <script src="./thuvien/jquery-3.6.4.min.js"></script>
+    <script src="./thuvien/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.scss">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- <div class="welcome">
+            <span>Welcome to our store </span>
+        </div> -->
+      <header class="header">
+        <div class="logo">
+          <a href="./index.html">
+            <span>SuperAudio</span>
+          </a>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+        <nav>
+          <ul class="menu">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./html/AboutUS.html">Giới thiệu về shop</a></li>
+            <li><a href="./html/contact.html">Liên hệ</a></li>
+          </ul>
+          <div class="search-cart">
+            <div class="search">
+              <a href="./html/Search.html"><i class="fa fa-search"></i></a>
+            </div>
+            <div class="cart">
+              <a href="#" id="cart"><i class="fa fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </nav>
+        <div class="account">
+          <button class="btn-account">Tài khoản</button>
+          <ul class="account-list">
+            <li><a href="./html/SignUp.html" class="signUp">Sign up</a></li>
+            <li><a href="./html/Profile.html" class="profile">Profile</a></li>
+            <li><a href="./html/SignIn.html" class="signIn">Sign in </a></li>
+            <li><button class="signOut btn">Sign out</button></li>
+          </ul>
+        </div>
+      </header>
+      <div class="modal fade">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content w-100">
+            <div class="modal-header w-100">
+              <h4 class="modal-title text-dark">Your cart</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body w-100">
+              <table class="table">
+                <thead>
+                  <th class="text-center">STT</th>
+                  <th class="text-center">ID</th>
+                  <th class="text-center">Name</th>
+                  <th class="text-center">Price</th>
+                  <th class="text-center">Quantity</th>
+                  <th class="text-center">Image</th>
+                </thead>
+                <tbody class="body-cart"></tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-l">
+                  <div class="item">
+                    <img src="./img/anhWeb/marshall.png" alt />
+                    <!-- <img src="./img/products/adidas-ultraboost-4.png" alt=""> -->
+                  </div>
+                </div>
+                <div class="col-r">
+                  <div class="item">
+                    <h3>Marshall Stanmore 3</h3>
+                    <p> Thiết kế mới ấn tượng với logo nổi mang tính biểu tượng mang thương hiệu Marshall và năm kỷ
+                      niệm 1962 được in trực tiếp trên bảng điều khiển.</p>
+                    <button>Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-l">
+                  <div class="item">
+                    <img src="./img/anhWeb/Braven.png" alt />
+                  </div>
+                </div>
+                <div class="col-r">
+                  <div class="item">
+                    <h3>Braven BRV 2200</h3>
+                    <p>Khi thời trang kết hợp với công nghệ sẽ tạo ra những điều tuyệt vời cho cuộc sống của bạn</p>
+                    <button>Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item row">
+              <div class="row">
+                <div class="col-l">
+                  <div class="item">
+                    <img src="./img/anhWeb/Aura.png" alt />
+                  </div>
+                </div>
+                <div class="col-r">
+                  <div class="item">
+                    <h3>Harman Kardon Aura Studio 3</h3>
+                    <p>Loa Bluetooth 360 độ kết hợp đèn led</p>
+                    <button>Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span aria-hidden="true">
+              <!-- <i class="fa-solid fa-caret-left" style=" fontSize: 80; color: #cbc9c9; margin-right: 150"> -->
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span aria-hidden="true">
+              <!-- <i class="fa-solid fa-caret-right " style={{fontSize: 80, color: '#cbc9c9', marginLeft: 150}} /> -->
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <h5 style={{position:'relative', bottom:-90,color: '#cbc9c9'}}>Product Feature</h5> -->
+      </div>
+      <section class="brand_section layout_padding2">
+        <div class="container">
+          <div class="brand_heading">
+            <h3 class="custom_heading">
+              DANH MỤC BESTSELLER
+            </h3>
+            <!-- <p class="font-weight-bold">
+              It is a long established fact that a reader will be distracted by the readable content of a page
+            </p> -->
+          </div>
+        </div>
+        <div class="container-fluid brand_item-container">
+          <div class="brand_item-box">
+            <div class="brand_img-box  item-1">
+              <a href="/html/item-1.html">
+                View More
+              </a>
+            </div>
+            <div class="brand_detail-box">
+              <h5>
+                $<span> 40 </span>
+              </h5>
+              <h6 class="">
+                best speaker
+              </h6>
+            </div>
+          </div>
+          <div class="brand_item-box">
+            <div class="brand_img-box  item-2">
+              <a href="/html/item-2.html">
+                View More
+              </a>
+            </div>
+            <div class="brand_detail-box">
+              <h5>
+                $<span> 50 </span>
+              </h5>
+              <h6 class="">
+                best speaker
+              </h6>
+            </div>
+          </div>
+          <div class="brand_item-box">
+            <div class="brand_img-box  item-3">
+              <a href="/html/item-3.html">
+                View More
+              </a>
+            </div>
+            <div class="brand_detail-box">
+              <h5>
+                $<span> 60 </span>
+              </h5>
+              <h6 class="">
+                best speaker
+              </h6>
+            </div>
+          </div>
+          <div class="brand_item-box">
+            <div class="brand_img-box  item-4">
+              <a href="/html/item-4.html">
+                View More
+              </a>
+            </div>
+            <div class="brand_detail-box">
+              <h5>
+                $<span> 70 </span>
+              </h5>
+              <h6 class="">
+                best speaker
+              </h6>
+            </div>
+          </div>
+          <div class="brand_item-box">
+            <div class="brand_img-box  item-5">
+              <a href="/html/item-5.html">
+                View More
+              </a>
+            </div>
+            <div class="brand_detail-box">
+              <h5>
+                $<span> 80 </span>
+              </h5>
+              <h6 class="">
+                best speaker
+              </h6>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+      <footer>
+        <div class="row">
+          <div class="col-4">
+            <h4>SuperAudio</h4>
+            <div class="item">
+              <a href="#"
+                ><i class="fa-solid fa-location-dot"></i> 12 Nguyen Van Bao,
+                Ward 4, Go Vap, Ho Chi Minh City</a
+              >
+              <div class="">
+                <div class="gmap_canvas">
+                  <iframe
+                    class="mapouter"
+                    width="380"
+                    height="200"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Đại học công nghiệp thành phố hồ chí minh&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                  ></iframe
+                  ><a href="https://2yu.co">2yu</a><br /><style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      height: 200px;
+                      width: 380px;
+                    }</style
+                  ><a href="https://embedgooglemap.2yu.co"
+                    >html embed google map</a
+                  ><style>
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      height: 200px;
+                      width: 380px;
+                    }
+                  </style>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-phone"> </i> 0999999999</a>
+              <a href="#"
+                ><i class="fa-solid fa-envelope"></i>Nhom9@gamil.com</a>
+            </div>
+          </div>
+          <div class="col-4 col2">
+            <h4>SuperAudio</h4>
+            <div class="item">
+              <a href="#"
+                ><i class="fa-solid fa-circle-arrow-right"></i>Vận chuyển nhanh chóng</a>
+              <a href="#"
+                ><i class="fa-solid fa-circle-arrow-right"></i>Free Ship</a>
+              <a href="#"
+                ><i class="fa-solid fa-circle-arrow-right"></i>Đảm bảo chất lương sản phẩm</a>
+              <a href="#"
+                ><i class="fa-solid fa-circle-arrow-right"></i>Chính sách bảo hành duy nhất chỉ có tại Shop.</a>
+            </div>
+            
+          </div>
+          <div class="col-4">
+            <h4>Online payment method</h4>
+            <div class="item">
+              <img src="./img/logo/viettellPay.jpg" alt="" />
+              <img src="./img/logo/momo.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- cdn bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- cdn jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/scroll.js"></script>
+    <script type="" src="./index.js"></script>
+    <!-- <script src="./js/cartModal.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      
+      <!-- Bootstrap CSS v5.2.1 -->
+      <link rel="stylesheet" href="../thuvien/bootstrap.min.css">
+      <script src="../thuvien/jquery-3.6.4.min.js"></script>
+      <script src="../thuvien/bootstrap.min.js"></script>
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+      />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      />
+      
+      <link rel="stylesheet" href="../css/SignUp.css" />
+      <title>Title</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- <div class="welcome">
+            <span>Welcome to our store </span>
+        </div> -->
+      <header class="header">
+        <div class="logo">
+          <a href="../index.html">
+            <span>SuperAudio</span>
+          </a>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+        <nav>  
+          <ul class="menu ">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu về shop</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+          <div class="search-cart">
+            <div class="search">
+              <a href="#"><i class="fa fa-search"></i></a>
+            </div>
+            <div class="cart">
+              <a href="#"><i class="fa fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </nav>
+        <div class="account">
+            <button class="btn-account">Tài khoản</button>
+          <ul class="account-list">  
+            <li ><a href="./SignUp.html">Sign up</a></li>
+            <li> <a href="./SignIn.html">Sign in </a></li>
+            <li ><a href="#" class="signOut">Sign out</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="form-signUp">
+        <div class="form" id="form">
+             <div class="form-header">
+                <h3>Sign Up</h3>
+             </div>
+             <div class="form-body">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email" id="email" >
+                <br>
+                <p class="tbEmail text-danger"></p>
+                <!-- <br> -->
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="userName" placeholder="User name" >
+                <br>
+                <p class="tbUserName text-danger"></p>
+                <i class="fa-solid fa-signature"></i>
+                <input type="text" id="name" placeholder="Full name" >
+                <br>
+                <p class="tbName text-danger"></p>
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="pas" placeholder="Input your password">
+                <span class="pas">
+                    <i class="fa-solid fa-eye" id="hidden1" ></i>
+                <i class="fa-solid fa-eye-slash"  id="hidden2"></i>
+                </span>
+                <br>
+                <p class="tbPas text-danger"></p>
+                <i class="fa-solid fa-square-check"></i>
+                <input type="password" placeholder="Confirm password" id="confirmPas" >
+                <span class="confirmPas">
+                    <i class="fa-solid fa-eye" id="hidden3" ></i>
+                    <i class="fa-solid fa-eye-slash" id="hidden4"></i>
+                </span>
+                <br>
+                <p class="tbConfirm text-danger"></p>
+             </div>
+             <div class="form-footer">
+                <a href="../html/SignIn.html">Sign in</a><br>
+                <button class="button" id="them" >Sign up</button>
+             </div>
+        </div>
+      </div>
+    </div>
+    <!-- cdn bootstrap -->
+    
+  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- cdn jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/scroll.js"></script>
+    <script  type="module" src="../js/signUp.js"></script>
+    <script src="../js/userSignUp.js"></script>
+    <script src="../js/validation.js"></script>
+    <!-- <script src="../js/product.js"></script> -->
+  </body>
+</html>
